@@ -24,13 +24,10 @@
     "value": "new"
   },
   "storageAccountName": {
-    "value": "jbosseap13c4a65799"
+    "value": "jbosseapf934e3a71c"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
-  },
-  "storageAccountResourceGroupName": {
-    "value": "EAP72-RHEL8-Img-Soln-Test-Rg1"
   },
   "virtualNetworkNewOrExisting": {
     "value": "new"
@@ -50,7 +47,7 @@
     "value": "10.0.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP72-RHEL8-Img-Soln-Test-Rg1"
+    "value": "EAP72-RHEL8-Img-Soln-Test-Rg2"
   },
   "publicIpNewOrExisting": {
     "value": "new"
@@ -59,10 +56,10 @@
     "value": "jbosseap-server-rhel8-ip"
   },
   "publicIpDns": {
-    "value": "jbosseap-server-rhel8-8bccbaa33e"
+    "value": "jbosseap-server-rhel8-778d58719e"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP72-RHEL8-Img-Soln-Test-Rg1"
+    "value": "EAP72-RHEL8-Img-Soln-Test-Rg2"
   },
   "publicIPAllocationMethod": {
     "value": "Dynamic"
