@@ -392,7 +392,7 @@
                 "[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
             ],
             "plan": {
-                "name": "rhel-lvm77",
+                "name": "rhel-lvm8",
                 "publisher": "redhat",
                 "product": "rhel-byos"
             },
