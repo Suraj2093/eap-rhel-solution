@@ -24,7 +24,7 @@
     "value": "new"
   },
   "storageAccountName": {
-    "value": "jbosseapf934e3a71c"
+    "value": "jbosseap4f915be9dd"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
@@ -37,14 +37,14 @@
   },
   "addressPrefixes": {
     "value": [
-      "10.0.0.0/16"
+      "10.2.0.0/16"
     ]
   },
   "subnetName": {
     "value": "Subnet-1"
   },
   "subnetPrefix": {
-    "value": "10.0.0.0/24"
+    "value": "10.2.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
     "value": "EAP72-RHEL8-Img-Soln-Test-Rg3"
@@ -56,7 +56,7 @@
     "value": "jbosseap-server-rhel8-ip"
   },
   "publicIpDns": {
-    "value": "jbosseap-server-rhel8-778d58719e"
+    "value": "jbosseap-server-rhel8-1a636d606e"
   },
   "publicIpResourceGroupName": {
     "value": "EAP72-RHEL8-Img-Soln-Test-Rg3"
