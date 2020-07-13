@@ -3,7 +3,7 @@
     "value": "eastus"
   },
   "vmName": {
-    "value": "jbosseap-server-rhel8"
+    "value": "jbosseap-server1-rhel8"
   },
   "adminUsername": {
     "value": "demouser"
