@@ -89,13 +89,6 @@
                 "description": "Storage account type"
             }
         },
-        "storageAccountResourceGroupName": {
-            "defaultValue": "[resourceGroup().name]",
-            "type": "String",
-            "metadata": {
-                "description": "Name of the resource group for the existing storage account"
-            }
-        },
         "virtualNetworkNewOrExisting": {
             "defaultValue": "new",
             "type": "String",
@@ -203,7 +196,7 @@
             }
         },
         "_artifactsLocation": {
-            "defaultValue": "https://raw.githubusercontent.com/SpektraSystems/redhat-mw-cloud-quickstart/suraj-rhel77/jboss-eap-standalone-rhel7/",
+            "defaultValue": "https://raw.githubusercontent.com/SpektraSystems/redhat-mw-cloud-quickstart/suraj-rhel77/jboss-eap-standalone-rhel8/",
             "type": "String",
             "metadata": {
                 "description": "The base URI where artifacts required by this template are located. When the template is deployed using the accompanying scripts, a private location in the subscription will be used and this value will be automatically generated"
@@ -246,7 +239,7 @@
         {
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2019-05-01",
-            "name": "pid-030dd49a-584a-405f-a29a-e760f5d00de3",
+            "name": "pid-18daf76a-7eb0-4cbd-8d91-9718bd030db9",
             "properties": {
                 "mode": "Incremental",
                 "template": {
@@ -420,7 +413,7 @@
                         "caching": "ReadWrite",
                         "createOption": "FromImage",
                         "image": {
-                            "uri": "https://eap72onrhel7imgdisks.blob.core.windows.net/vhds/rhel77-byos-img-vm20200623224019.vhd"
+                            "uri": "https://eap72onrhel8imgdisks.blob.core.windows.net/vhds/rhel8-byos-img-vm20200706134815.vhd"
                         },
                         "vhd": {
                             "uri": "[variables('osDiskVhdName')]"
