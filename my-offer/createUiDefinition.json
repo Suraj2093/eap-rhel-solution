@@ -229,7 +229,6 @@
             "storageNewOrExisting": "[steps('VirtualMachineConfig').storageAccountType.newOrExisting]",
             "storageAccountName": "[steps('VirtualMachineConfig').storageAccountType.name]",
             "storageAccountType": "[steps('VirtualMachineConfig').storageAccountType.type]",
-            "storageAccountResourceGroupName": "[steps('VirtualMachineConfig').storageAccountType.resourceGroup]",
 
             "virtualNetworkNewOrExisting": "[steps('VirtualMachineConfig').virtualNetwork.newOrExisting]",
             "virtualNetworkName": "[steps('VirtualMachineConfig').virtualNetwork.name]",
