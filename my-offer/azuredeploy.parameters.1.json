@@ -1,0 +1,76 @@
+{
+  "location": {
+    "value": "eastus"
+  },
+  "vmName": {
+    "value": "jbosseap-servervmxiw"
+  },
+  "adminUsername": {
+    "value": "demouser"
+  },
+  "authenticationType": {
+    "value": "password"
+  },
+  "adminPasswordOrSSHKey": {
+    "value": "demoPassword1!"
+  },
+  "vmSize": {
+    "value": "Standard_DS2_v2"
+  },
+  "bootDiagnostics": {
+    "value": "On"
+  },
+  "storageNewOrExisting": {
+    "value": "new"
+  },
+  "storageAccountName": {
+    "value": "jbosseap43ae8704fa"
+  },
+  "storageAccountType": {
+    "value": "Standard_LRS"
+  },
+  "storageAccountResourceGroupName": {
+    "value": "Test-ManagedApps-Rg6"
+  },
+  "virtualNetworkNewOrExisting": {
+    "value": "new"
+  },
+  "virtualNetworkName": {
+    "value": "VirtualNetwork"
+  },
+  "addressPrefixes": {
+    "value": [
+      "10.7.0.0/16"
+    ]
+  },
+  "subnetName": {
+    "value": "Subnet-1"
+  },
+  "subnetPrefix": {
+    "value": "10.7.0.0/24"
+  },
+  "virtualNetworkResourceGroupName": {
+    "value": "Test-ManagedApps-Rg6"
+  },
+  "publicIpNewOrExisting": {
+    "value": "new"
+  },
+  "publicIpName": {
+    "value": "jbosseap-servervmxiw-ip"
+  },
+  "publicIpDns": {
+    "value": "jbosseap-servervmxiw-49e3bc4f3f"
+  },
+  "publicIpResourceGroupName": {
+    "value": "Test-ManagedApps-Rg6"
+  },
+  "publicIPAllocationMethod": {
+    "value": "Dynamic"
+  },
+  "jbossEAPUserName": {
+    "value": "demouser1"
+  },
+  "jbossEAPPassword": {
+    "value": "demoPassword1!"
+  }
+}

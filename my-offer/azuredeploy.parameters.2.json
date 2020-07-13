@@ -1,0 +1,64 @@
+{
+  "location": {
+    "value": "eastus"
+  },
+  "vmName": {
+    "value": "jbosseap-vm2"
+  },
+  "adminUsername": {
+    "value": "demouser"
+  },
+  "authenticationType": {
+    "value": "password"
+  },
+  "adminPasswordOrSSHKey": {
+    "value": "demoPassword1!"
+  },
+  "vmSize": {
+    "value": "Standard_DS2_v2"
+  },
+  "bootDiagnostics": {
+    "value": "Off"
+  },
+  "virtualNetworkNewOrExisting": {
+    "value": "new"
+  },
+  "virtualNetworkName": {
+    "value": "VirtualNetwork"
+  },
+  "addressPrefixes": {
+    "value": [
+      "10.6.0.0/16"
+    ]
+  },
+  "subnetName": {
+    "value": "Subnet-1"
+  },
+  "subnetPrefix": {
+    "value": "10.6.0.0/24"
+  },
+  "virtualNetworkResourceGroupName": {
+    "value": "Test-ManagedApps-Rg5"
+  },
+  "publicIpNewOrExisting": {
+    "value": "new"
+  },
+  "publicIpName": {
+    "value": "jbosseap-vm2-ip"
+  },
+  "publicIpDns": {
+    "value": "jbosseap-vm2-cd22fdbff0"
+  },
+  "publicIpResourceGroupName": {
+    "value": "Test-ManagedApps-Rg5"
+  },
+  "publicIPAllocationMethod": {
+    "value": "Dynamic"
+  },
+  "jbossEAPUserName": {
+    "value": "demouser1"
+  },
+  "jbossEAPPassword": {
+    "value": "demoPassword1!"
+  }
+}
