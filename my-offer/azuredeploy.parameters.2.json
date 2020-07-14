@@ -18,16 +18,7 @@
     "value": "Standard_DS2_v2"
   },
   "bootDiagnostics": {
-    "value": "On"
-  },
-  "storageNewOrExisting": {
-    "value": "existing"
-  },
-  "storageAccountName": {
-    "value": "rhelstrg8vhd"
-  },
-  "storageAccountType": {
-    "value": "Standard_LRS"
+    "value": "Off"
   },
   "virtualNetworkNewOrExisting": {
     "value": "new"
@@ -41,25 +32,25 @@
     ]
   },
   "subnetName": {
-    "value": "Subnet-rhel"
+    "value": "jbosseap-subnet"
   },
   "subnetPrefix": {
     "value": "10.2.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP72-RHEL8-Img-Soln-Test-Rg4"
+    "value": "EAP7.2-RHEL8-Img-Soln-Test-Rg2"
   },
   "publicIpNewOrExisting": {
     "value": "new"
   },
   "publicIpName": {
-    "value": "jbosseap-server-rhel8-ip"
+    "value": "jbosseap-server2-rhel8-ip"
   },
   "publicIpDns": {
-    "value": "jbosseap-server-rhel8-2ed64c1742"
+    "value": "jbosseap-server2-rhel8-508dcf0eff"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP72-RHEL8-Img-Soln-Test-Rg4"
+    "value": "EAP7.2-RHEL8-Img-Soln-Test-Rg2"
   },
   "publicIPAllocationMethod": {
     "value": "Dynamic"
