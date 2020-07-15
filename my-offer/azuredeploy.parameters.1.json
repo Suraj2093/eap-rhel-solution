@@ -3,10 +3,10 @@
     "value": "eastus"
   },
   "vmName": {
-    "value": "jbosseap-server6-rhel8"
+    "value": "jbosseap-server8-rhel8"
   },
   "adminUsername": {
-    "value": "demouser1"
+    "value": "demouser"
   },
   "authenticationType": {
     "value": "password"
@@ -21,10 +21,10 @@
     "value": "On"
   },
   "storageNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "storageAccountName": {
-    "value": "rhel8eap73diagstrg"
+    "value": "rhel8srpdiagstrg"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
@@ -53,16 +53,19 @@
     "value": "new"
   },
   "publicIpName": {
-    "value": "jbosseap-server6-rhel8-ip"
+    "value": "jbosseap-server7-srp-ip2"
   },
   "publicIpDns": {
-    "value": "jbosseap-server6-rhel8-facb49b331"
+    "value": "jbosseap-server8-rhel8-srp2"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-Img-Soln-Test-Rg6"
+    "value": "EAP73-RHEL8-Img-Soln-Test-Rg8"
   },
   "publicIPAllocationMethod": {
     "value": "Dynamic"
+  },
+  "publicIpSku": {
+    "value": "Basic"
   },
   "jbossEAPUserName": {
     "value": "demouser1"
