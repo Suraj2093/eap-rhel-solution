@@ -215,7 +215,7 @@
         "nicName": "[concat(uniquestring(resourceGroup().id), '-nic')]",
         "networkSecurityGroupName": "jbosseap-nsg",
         "scriptFolder": "scripts",
-        "scriptFileName": "eap7.3-adduser.sh",
+        "scriptFileName": "eap73-adduser.sh",
         "bootdiagnosticscheck": "[and(equals(parameters('storageNewOrExisting'), 'new'), equals(parameters('bootDiagnostics'),'On'))]",
         "publicIpAddressId": {
             "id": "[resourceId(parameters('publicIpResourceGroupName'), 'Microsoft.Network/publicIPAddresses', parameters('publicIpName'))]"
@@ -447,7 +447,7 @@
                     "fileUris": [
                         "[concat(parameters('_artifactsLocation'), variables('scriptFolder'), '/', variables('scriptFileName'), parameters('_artifactsLocationSasToken'))]"
                     ],
-                    "commandToExecute": "[concat('sh eap7.3-adduser.sh',' ',parameters('jbossEAPUserName'),' ',variables('singlequote'),parameters('jbossEAPPassword'),variables('singlequote'))]"
+                    "commandToExecute": "[concat('sh eap73-adduser.sh',' ',parameters('jbossEAPUserName'),' ',variables('singlequote'),parameters('jbossEAPPassword'),variables('singlequote'))]"
                 }
             }
         }
