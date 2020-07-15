@@ -3,7 +3,7 @@
     "value": "eastus"
   },
   "vmName": {
-    "value": "jbosseap-server2-rhel8"
+    "value": "jbosseap-server4-rhel8"
   },
   "adminUsername": {
     "value": "demouser"
@@ -15,22 +15,22 @@
     "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAyk4QxbZEYXM4vaoo5mtYG49okT752a1SlAXCEoglqiAXkzDmuLk3fL0haYALTpSQNeku4192z0FVCrISgHuYsHaGWYw1WmgCId2xM2W3Dad1TkR7wB4oURww8n4/FwmgzMIicR+7mQpgaHTIrSTPM/X0puhpsw4GrB6ETnUmaqK7ukFkrO1V2sZ8CHrZlGunSkG++nn3bWD/OFpHGCgu+UD++aSwGwZaRBLOnoh58bHbxJaPCt6oAhyEjmdUJgBaPUrdmFPpzWqWu+NX86EuIjzGN97k1t5DCn8bC7ir0PxryHbxmfj49/MuGbEv8U0AvatlB+pOyIiXQGmoemO78w=="
   },
   "vmSize": {
-    "value": "Standard_DS2_v2"
+    "value": "Standard_E2s_v3"
   },
   "bootDiagnostics": {
     "value": "On"
   },
   "storageNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "storageAccountName": {
-    "value": "rhel8eap73diagstrg"
+    "value": "cvefbvgtrr"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
   },
   "virtualNetworkNewOrExisting": {
-    "value": "new"
+    "value": "existing"
   },
   "virtualNetworkName": {
     "value": "VirtualNetwork"
@@ -41,31 +41,28 @@
     ]
   },
   "subnetName": {
-    "value": "rhelp-subnet"
+    "value": "rhel-external"
   },
   "subnetPrefix": {
-    "value": "10.0.0.0/24"
+    "value": "10.0.2.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP73-RHEL8-Img-Soln-Test-Rg2"
+    "value": "EAP73-RHEL8-Img-Soln-Test-Rg1"
   },
   "publicIpNewOrExisting": {
     "value": "new"
   },
   "publicIpName": {
-    "value": "jbosseap-server2-jssshjhdbeo"
+    "value": "jbosseap-server4-rhel8-ip"
   },
   "publicIpDns": {
-    "value": "jbosseap-server2-rhel8-srp2"
+    "value": "jbosseap-server4-rhel8-943dd1df94"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-Img-Soln-Test-Rg2"
+    "value": "EAP73-RHEL8-Img-Soln-Test-Rg4"
   },
   "publicIPAllocationMethod": {
     "value": "Dynamic"
-  },
-  "publicIpSku": {
-    "value": "Basic"
   },
   "jbossEAPUserName": {
     "value": "demouser1"
