@@ -3,7 +3,7 @@
     "value": "eastus"
   },
   "vmName": {
-    "value": "jbosseap-server2-rhel8"
+    "value": "jbosseap-server1-rhel8"
   },
   "adminUsername": {
     "value": "demouser"
@@ -24,7 +24,7 @@
     "value": "new"
   },
   "storageAccountName": {
-    "value": "jbosseapa4ee8c5072"
+    "value": "jbosseap09343b775e"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
@@ -37,14 +37,14 @@
   },
   "addressPrefixes": {
     "value": [
-      "10.2.0.0/16"
+      "10.0.0.0/16"
     ]
   },
   "subnetName": {
-    "value": "jboss-subnet"
+    "value": "Subnet-1"
   },
   "subnetPrefix": {
-    "value": "10.2.0.0/24"
+    "value": "10.0.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
     "value": "EAP73-RHEL8-Img-Soln-Test-Rg2"
@@ -53,10 +53,10 @@
     "value": "new"
   },
   "publicIpName": {
-    "value": "jbosseap-server2-rhel8-ip"
+    "value": "jbosseap-server1-rhel8-ip"
   },
   "publicIpDns": {
-    "value": "jbosseap-server2-rhel8-132cb041eb"
+    "value": "jbosseap-server1-rhel8-baed46a400"
   },
   "publicIpResourceGroupName": {
     "value": "EAP73-RHEL8-Img-Soln-Test-Rg2"
