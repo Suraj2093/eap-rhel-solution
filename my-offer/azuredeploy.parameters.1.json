@@ -15,7 +15,7 @@
     "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAyk4QxbZEYXM4vaoo5mtYG49okT752a1SlAXCEoglqiAXkzDmuLk3fL0haYALTpSQNeku4192z0FVCrISgHuYsHaGWYw1WmgCId2xM2W3Dad1TkR7wB4oURww8n4/FwmgzMIicR+7mQpgaHTIrSTPM/X0puhpsw4GrB6ETnUmaqK7ukFkrO1V2sZ8CHrZlGunSkG++nn3bWD/OFpHGCgu+UD++aSwGwZaRBLOnoh58bHbxJaPCt6oAhyEjmdUJgBaPUrdmFPpzWqWu+NX86EuIjzGN97k1t5DCn8bC7ir0PxryHbxmfj49/MuGbEv8U0AvatlB+pOyIiXQGmoemO78w=="
   },
   "vmSize": {
-    "value": "Standard_DS2"
+    "value": "Standard_F2s"
   },
   "bootDiagnostics": {
     "value": "On"
