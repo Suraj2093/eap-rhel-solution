@@ -3,7 +3,7 @@
     "value": "eastus"
   },
   "vmName": {
-    "value": "jbosseap-server5-rhel8"
+    "value": "jbosseap-server7-rhel8"
   },
   "adminUsername": {
     "value": "demouser"
@@ -18,42 +18,54 @@
     "value": "Standard_DS2_v2"
   },
   "bootDiagnostics": {
-    "value": "Off"
+    "value": "On"
+  },
+  "storageNewOrExisting": {
+    "value": "new"
+  },
+  "storageAccountName": {
+    "value": "jbosseap377336e1dd"
+  },
+  "storageAccountType": {
+    "value": "Standard_LRS"
   },
   "virtualNetworkNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "virtualNetworkName": {
     "value": "VirtualNetwork"
   },
   "addressPrefixes": {
     "value": [
-      "10.2.0.0/16"
+      "10.4.0.0/16"
     ]
   },
   "subnetName": {
     "value": "Subnet-1"
   },
   "subnetPrefix": {
-    "value": "10.2.0.0/24"
+    "value": "10.4.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP73-RHEL8-Img-Soln-Test-Rg3"
+    "value": "EAP73-RHEL8-Img-Soln-Test-Rg7"
   },
   "publicIpNewOrExisting": {
     "value": "new"
   },
   "publicIpName": {
-    "value": "jbosseap-server5-rhel8-ip"
+    "value": "jbosseap-server7-srp-ip"
   },
   "publicIpDns": {
-    "value": "jbosseap-server5-rhel8-7601504642"
+    "value": "jbosseap-server7-rhel8-srp1"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-Img-Soln-Test-Rg5"
+    "value": "EAP73-RHEL8-Img-Soln-Test-Rg7"
   },
   "publicIPAllocationMethod": {
-    "value": "Dynamic"
+    "value": "Static"
+  },
+  "publicIpSku": {
+    "value": "Basic"
   },
   "jbossEAPUserName": {
     "value": "demouser1"
