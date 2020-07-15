@@ -3,16 +3,16 @@
     "value": "eastus"
   },
   "vmName": {
-    "value": "jbosseap-server8-rhel8"
+    "value": "jbosseap-server1-rhel8"
   },
   "adminUsername": {
     "value": "demouser"
   },
   "authenticationType": {
-    "value": "password"
+    "value": "sshPublicKey"
   },
   "adminPasswordOrSSHKey": {
-    "value": "demoPassword1!"
+    "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAyk4QxbZEYXM4vaoo5mtYG49okT752a1SlAXCEoglqiAXkzDmuLk3fL0haYALTpSQNeku4192z0FVCrISgHuYsHaGWYw1WmgCId2xM2W3Dad1TkR7wB4oURww8n4/FwmgzMIicR+7mQpgaHTIrSTPM/X0puhpsw4GrB6ETnUmaqK7ukFkrO1V2sZ8CHrZlGunSkG++nn3bWD/OFpHGCgu+UD++aSwGwZaRBLOnoh58bHbxJaPCt6oAhyEjmdUJgBaPUrdmFPpzWqWu+NX86EuIjzGN97k1t5DCn8bC7ir0PxryHbxmfj49/MuGbEv8U0AvatlB+pOyIiXQGmoemO78w=="
   },
   "vmSize": {
     "value": "Standard_DS2_v2"
@@ -24,48 +24,45 @@
     "value": "new"
   },
   "storageAccountName": {
-    "value": "rhel8srpdiagstrg"
+    "value": "jbosseapa8696df1da"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
   },
   "virtualNetworkNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "virtualNetworkName": {
     "value": "VirtualNetwork"
   },
   "addressPrefixes": {
     "value": [
-      "10.3.0.0/16"
+      "10.0.0.0/16"
     ]
   },
   "subnetName": {
-    "value": "external-subnet"
+    "value": "rhel-subnet"
   },
   "subnetPrefix": {
-    "value": "10.3.1.0/24"
+    "value": "10.0.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP73-RHEL8-Img-Soln-Test-Rg4"
+    "value": "EAP73-RHEL8-Img-Soln-Test-Rg1"
   },
   "publicIpNewOrExisting": {
     "value": "new"
   },
   "publicIpName": {
-    "value": "jbosseap-server7-srp-ip2"
+    "value": "jbosseap-server1-rhel8-ip"
   },
   "publicIpDns": {
-    "value": "jbosseap-server8-rhel8-srp2"
+    "value": "jbosseap-server1-rhel8-f19562a797"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-Img-Soln-Test-Rg8"
+    "value": "EAP73-RHEL8-Img-Soln-Test-Rg1"
   },
   "publicIPAllocationMethod": {
     "value": "Dynamic"
-  },
-  "publicIpSku": {
-    "value": "Basic"
   },
   "jbossEAPUserName": {
     "value": "demouser1"

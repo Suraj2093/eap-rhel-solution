@@ -3,16 +3,16 @@
     "value": "eastus"
   },
   "vmName": {
-    "value": "jbosseap-server7-rhel8"
+    "value": "jbosseap-server2-rhel8"
   },
   "adminUsername": {
     "value": "demouser"
   },
   "authenticationType": {
-    "value": "password"
+    "value": "sshPublicKey"
   },
   "adminPasswordOrSSHKey": {
-    "value": "demoPassword1!"
+    "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAyk4QxbZEYXM4vaoo5mtYG49okT752a1SlAXCEoglqiAXkzDmuLk3fL0haYALTpSQNeku4192z0FVCrISgHuYsHaGWYw1WmgCId2xM2W3Dad1TkR7wB4oURww8n4/FwmgzMIicR+7mQpgaHTIrSTPM/X0puhpsw4GrB6ETnUmaqK7ukFkrO1V2sZ8CHrZlGunSkG++nn3bWD/OFpHGCgu+UD++aSwGwZaRBLOnoh58bHbxJaPCt6oAhyEjmdUJgBaPUrdmFPpzWqWu+NX86EuIjzGN97k1t5DCn8bC7ir0PxryHbxmfj49/MuGbEv8U0AvatlB+pOyIiXQGmoemO78w=="
   },
   "vmSize": {
     "value": "Standard_DS2_v2"
@@ -21,10 +21,10 @@
     "value": "On"
   },
   "storageNewOrExisting": {
-    "value": "new"
+    "value": "existing"
   },
   "storageAccountName": {
-    "value": "jbosseap377336e1dd"
+    "value": "rhel8eap73diagstrg"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
@@ -37,32 +37,32 @@
   },
   "addressPrefixes": {
     "value": [
-      "10.4.0.0/16"
+      "10.0.0.0/16"
     ]
   },
   "subnetName": {
-    "value": "Subnet-1"
+    "value": "rhelp-subnet"
   },
   "subnetPrefix": {
-    "value": "10.4.0.0/24"
+    "value": "10.0.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP73-RHEL8-Img-Soln-Test-Rg7"
+    "value": "EAP73-RHEL8-Img-Soln-Test-Rg2"
   },
   "publicIpNewOrExisting": {
     "value": "new"
   },
   "publicIpName": {
-    "value": "jbosseap-server7-srp-ip"
+    "value": "jbosseap-server2-jssshjhdbeo"
   },
   "publicIpDns": {
-    "value": "jbosseap-server7-rhel8-srp1"
+    "value": "jbosseap-server2-rhel8-srp2"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-Img-Soln-Test-Rg7"
+    "value": "EAP73-RHEL8-Img-Soln-Test-Rg2"
   },
   "publicIPAllocationMethod": {
-    "value": "Static"
+    "value": "Dynamic"
   },
   "publicIpSku": {
     "value": "Basic"
