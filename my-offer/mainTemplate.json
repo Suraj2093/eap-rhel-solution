@@ -444,7 +444,7 @@
     "outputs": {
         "vm DNS Name": {
             "type": "String",
-            "value": "[reference(resourceId(parameters('publicIpResourceGroupName'), 'Microsoft.Network/publicIPAddresses', parameters('publicIpName'))).dnsSettings.fqdn]"
+            "value": "[reference(resourceId(parameters('publicIpResourceGroupName'), 'Microsoft.Network/publicIPAddresses', parameters('publicIpName')), '2019-11-01').dnsSettings.fqdn]"
         }
     }
 }
