@@ -448,7 +448,7 @@
         },
         "adminConsole": {
             "type": "String",
-            "value": "[concat('http://', reference(parameters('publicIpName'), '2019-11-01').dnsSettings.fqdn, ':9990')]"
+            "value": "[concat('http://', reference(resourceId(parameters('publicIpResourceGroupName'), 'Microsoft.Network/publicIPAddresses', parameters('publicIpName')), '2019-11-01').dnsSettings.fqdn, ':9990')]"
         }
     }
 }
