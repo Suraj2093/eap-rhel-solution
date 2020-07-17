@@ -445,6 +445,10 @@
         "vm DNS Name": {
             "type": "String",
             "value": "[reference(resourceId(parameters('publicIpResourceGroupName'), 'Microsoft.Network/publicIPAddresses', parameters('publicIpName')), '2019-11-01').dnsSettings.fqdn]"
+        },
+        "adminConsole": {
+            "type": "String",
+            "value": "[concat('http://', reference(parameters('publicIpName')).dnsSettings.fqdn, ':9990')]"
         }
     }
 }

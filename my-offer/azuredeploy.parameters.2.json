@@ -3,19 +3,19 @@
     "value": "eastus"
   },
   "vmName": {
-    "value": "jbosseap-server4-rhel8"
+    "value": "jbosseap-server2-rhel8"
   },
   "adminUsername": {
     "value": "demouser"
   },
   "authenticationType": {
-    "value": "sshPublicKey"
+    "value": "password"
   },
   "adminPasswordOrSSHKey": {
-    "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAyk4QxbZEYXM4vaoo5mtYG49okT752a1SlAXCEoglqiAXkzDmuLk3fL0haYALTpSQNeku4192z0FVCrISgHuYsHaGWYw1WmgCId2xM2W3Dad1TkR7wB4oURww8n4/FwmgzMIicR+7mQpgaHTIrSTPM/X0puhpsw4GrB6ETnUmaqK7ukFkrO1V2sZ8CHrZlGunSkG++nn3bWD/OFpHGCgu+UD++aSwGwZaRBLOnoh58bHbxJaPCt6oAhyEjmdUJgBaPUrdmFPpzWqWu+NX86EuIjzGN97k1t5DCn8bC7ir0PxryHbxmfj49/MuGbEv8U0AvatlB+pOyIiXQGmoemO78w=="
+    "value": "demoPassword1!"
   },
   "vmSize": {
-    "value": "Standard_E2s_v3"
+    "value": "Standard_DS2_v2"
   },
   "bootDiagnostics": {
     "value": "On"
@@ -24,45 +24,48 @@
     "value": "new"
   },
   "storageAccountName": {
-    "value": "cvefbvgtrr"
+    "value": "jbosseapa60abcf1e2"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
   },
   "virtualNetworkNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "virtualNetworkName": {
     "value": "VirtualNetwork"
   },
   "addressPrefixes": {
     "value": [
-      "10.0.0.0/16"
+      "10.3.0.0/16"
     ]
   },
   "subnetName": {
-    "value": "rhel-external"
+    "value": "rhel-subnet"
   },
   "subnetPrefix": {
-    "value": "10.0.2.0/24"
+    "value": "10.3.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP73-RHEL8-Img-Soln-Test-Rg1"
+    "value": "EAP73-RHEL8-Img-Soln-Test-Rg2"
   },
   "publicIpNewOrExisting": {
-    "value": "new"
+    "value": "existing"
   },
   "publicIpName": {
-    "value": "jbosseap-server4-rhel8-ip"
+    "value": "externalvm2-ip"
   },
   "publicIpDns": {
-    "value": "jbosseap-server4-rhel8-943dd1df94"
+    "value": "externaltest2-rhel"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-Img-Soln-Test-Rg4"
+    "value": "rhel-testip-rg2"
   },
   "publicIPAllocationMethod": {
     "value": "Dynamic"
+  },
+  "publicIpSku": {
+    "value": "Basic"
   },
   "jbossEAPUserName": {
     "value": "demouser1"
