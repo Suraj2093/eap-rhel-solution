@@ -5,6 +5,31 @@
     "parameters": {
         "basics": [
             {
+                "name": "plan",
+                "type": "Microsoft.Common.DropDown",
+                "label": "Plan",
+                "defaultValue": "JBoss EAP7.2 on RHEL7.7",
+                "toolTip": "Version of JBoss EAP on RHEL you want to deploy",
+                "constraints": {
+                  "allowedValues": [
+                    {
+                      "label": "JBoss EAP7.2 on RHEL7.7",
+                      "value": "JBoss EAP7.2 on RHEL7.7"
+                    },
+                    {
+                      "label": "JBoss EAP7.2 on RHEL8.0",
+                      "value": "JBoss EAP7.2 on RHEL8.0"
+                    },
+                    {
+                      "label": "JBoss EAP7.3 on RHEL8.0",
+                      "value": "JBoss EAP7.3 on RHEL8.0"
+                    }
+                  ],
+                  "required": true
+                },
+                "visible": true
+            },
+            {
                 "name": "vmName",
                 "type": "Microsoft.Common.TextBox",
                 "label": "Virtual Machine name",
@@ -219,6 +244,7 @@
         "outputs": {
 
             "location": "[location()]",
+            "plan": "[basics('plan')]",
             "vmName": "[basics('vmName')]",
             "adminUsername": "[basics('adminUsername')]",
             "authenticationType": "[basics('authenticationType').authenticationType]",
