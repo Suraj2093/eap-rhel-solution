@@ -38,7 +38,7 @@
     "value": "10.0.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP7.3-RHEL8-Img-Soln-Rg1"
+    "value": "EAP73-RHEL8-Img-Soln-Test-Rg1"
   },
   "publicIpNewOrExisting": {
     "value": "new"
@@ -50,7 +50,7 @@
     "value": "jbosseap-server1-rhel8-161f3e8280"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP7.3-RHEL8-Img-Soln-Rg1"
+    "value": "EAP73-RHEL8-Img-Soln-Test-Rg1"
   },
   "publicIPAllocationMethod": {
     "value": "Dynamic"
