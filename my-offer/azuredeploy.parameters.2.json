@@ -3,19 +3,19 @@
     "value": "eastus"
   },
   "plan": {
-    "value": "JBoss EAP7.3 on RHEL8.0"
+    "value": "JBoss EAP7.2 on RHEL8.0"
   },
   "vmName": {
-    "value": "jbosseap73-server1-rhel8"
+    "value": "jbosseap72-server2-rhel8"
   },
   "adminUsername": {
     "value": "demouser"
   },
   "authenticationType": {
-    "value": "password"
+    "value": "sshPublicKey"
   },
   "adminPasswordOrSSHKey": {
-    "value": "demoPassword1!"
+    "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA4LbOpNIigWStHA7eihl6mvXgzFtwNA4uHoqKoj7QTHU/N9oIGoQ2qFe80KM1vA09BskL5Knk7p8VxxFMBFTaSVI9fuRlaZY2Lp94kdfQOKwghKufMNDD7E3rIVDXHdnovnR/9Qf0IUc6p7K8srl6RPjzOCqxSX0UqpO++TSBsO6kYsw1f7nKLeC81t1x7g6WJs2OMiaAtWzeqSB5JXDi2XGLmDqmH29gqgtv8M3n5QAW8vM98shwl/OAXYKDAdvil8lVopBhVyhLexFeTTF2Z6VhroHQvJ9S7sEM8JDW7szv2tx5p7tKtbLyAi0fIu8JWB+Wr7HQrDOf8A/2jhMRvw=="
   },
   "vmSize": {
     "value": "Standard_DS2_v2"
@@ -24,10 +24,10 @@
     "value": "On"
   },
   "storageNewOrExisting": {
-    "value": "new"
+    "value": "existing"
   },
   "storageAccountName": {
-    "value": "wesdgtrsdgsrp"
+    "value": "diagteststrgsoln"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
@@ -40,32 +40,35 @@
   },
   "addressPrefixes": {
     "value": [
-      "10.3.0.0/16"
+      "10.4.0.0/16"
     ]
   },
   "subnetName": {
-    "value": "Subnet-1"
+    "value": "rhel8-subnet"
   },
   "subnetPrefix": {
-    "value": "10.3.0.0/24"
+    "value": "10.4.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP73-RHEL8-Img-Soln-Test-Rg1"
+    "value": "EAP72-RHEL8-Img-Soln-Test-Rg2"
   },
   "publicIpNewOrExisting": {
-    "value": "new"
+    "value": "existing"
   },
   "publicIpName": {
-    "value": "jbosseap73-server1-rhel8-ip"
+    "value": "eap72-rhel8-ip1"
   },
   "publicIpDns": {
-    "value": "jbosseap73-server1-rhel8-020fef003f"
+    "value": "eap72rhel8external-ip1"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-Img-Soln-Test-Rg1"
+    "value": "External-IP-Test-Rg1"
   },
   "publicIPAllocationMethod": {
     "value": "Dynamic"
+  },
+  "publicIpSku": {
+    "value": "Basic"
   },
   "jbossEAPUserName": {
     "value": "demouser1"
