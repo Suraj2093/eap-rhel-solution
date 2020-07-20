@@ -3,10 +3,10 @@
     "value": "eastus"
   },
   "plan": {
-    "value": "JBoss EAP7.2 on RHEL7.7"
+    "value": "JBoss EAP7.3 on RHEL8.0"
   },
   "vmName": {
-    "value": "jbosseap-server2-rhel7"
+    "value": "jbosseap73-server2-rhel8"
   },
   "adminUsername": {
     "value": "demouser"
@@ -18,7 +18,7 @@
     "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA4LbOpNIigWStHA7eihl6mvXgzFtwNA4uHoqKoj7QTHU/N9oIGoQ2qFe80KM1vA09BskL5Knk7p8VxxFMBFTaSVI9fuRlaZY2Lp94kdfQOKwghKufMNDD7E3rIVDXHdnovnR/9Qf0IUc6p7K8srl6RPjzOCqxSX0UqpO++TSBsO6kYsw1f7nKLeC81t1x7g6WJs2OMiaAtWzeqSB5JXDi2XGLmDqmH29gqgtv8M3n5QAW8vM98shwl/OAXYKDAdvil8lVopBhVyhLexFeTTF2Z6VhroHQvJ9S7sEM8JDW7szv2tx5p7tKtbLyAi0fIu8JWB+Wr7HQrDOf8A/2jhMRvw=="
   },
   "vmSize": {
-    "value": "Standard_DS2_v2"
+    "value": "Standard_F2s_v2"
   },
   "bootDiagnostics": {
     "value": "On"
@@ -33,33 +33,33 @@
     "value": "Standard_LRS"
   },
   "virtualNetworkNewOrExisting": {
-    "value": "new"
+    "value": "existing"
   },
   "virtualNetworkName": {
-    "value": "VirtualNetwork"
+    "value": "RHEL-External-VNET"
   },
   "addressPrefixes": {
     "value": [
-      "10.4.0.0/16"
+      "10.2.0.0/16"
     ]
   },
   "subnetName": {
-    "value": "rhel7-subnet"
+    "value": "rhel-external-subnet"
   },
   "subnetPrefix": {
-    "value": "10.4.0.0/24"
+    "value": "10.2.1.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP72-RHEL7-Img-Soln-Test-Rg2"
+    "value": "Test-VNET-Solution-RG1"
   },
   "publicIpNewOrExisting": {
     "value": "existing"
   },
   "publicIpName": {
-    "value": "eap-rhel7-ip1"
+    "value": "eap73-rhel8-ip1"
   },
   "publicIpDns": {
-    "value": "eaprhel7external-ip1"
+    "value": "eap73rhel8external-ip1"
   },
   "publicIpResourceGroupName": {
     "value": "External-IP-Test-Rg1"
