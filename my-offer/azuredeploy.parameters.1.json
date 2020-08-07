@@ -3,72 +3,69 @@
     "value": "eastus"
   },
   "plan": {
-    "value": "JBoss EAP7.3 on RHEL8.0"
+    "value": "JBoss EAP7.2 on RHEL7.7"
   },
   "vmName": {
-    "value": "jbosseap73-server2-rhel8"
+    "value": "jbosseap-server1-rhel7"
   },
   "adminUsername": {
     "value": "demouser"
   },
   "authenticationType": {
-    "value": "sshPublicKey"
+    "value": "password"
   },
   "adminPasswordOrSSHKey": {
-    "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA4LbOpNIigWStHA7eihl6mvXgzFtwNA4uHoqKoj7QTHU/N9oIGoQ2qFe80KM1vA09BskL5Knk7p8VxxFMBFTaSVI9fuRlaZY2Lp94kdfQOKwghKufMNDD7E3rIVDXHdnovnR/9Qf0IUc6p7K8srl6RPjzOCqxSX0UqpO++TSBsO6kYsw1f7nKLeC81t1x7g6WJs2OMiaAtWzeqSB5JXDi2XGLmDqmH29gqgtv8M3n5QAW8vM98shwl/OAXYKDAdvil8lVopBhVyhLexFeTTF2Z6VhroHQvJ9S7sEM8JDW7szv2tx5p7tKtbLyAi0fIu8JWB+Wr7HQrDOf8A/2jhMRvw=="
+    "value": "demoPassword1!"
   },
   "vmSize": {
-    "value": "Standard_F2s_v2"
+    "value": "Standard_DS2_v2"
   },
   "bootDiagnostics": {
     "value": "On"
   },
   "storageNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "storageAccountName": {
-    "value": "diagteststrgsoln"
+    "value": "jbosseap68606f2cdc"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
   },
   "virtualNetworkNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "virtualNetworkName": {
-    "value": "RHEL-External-VNET"
+    "value": "VirtualNetwork"
   },
   "addressPrefixes": {
     "value": [
-      "10.2.0.0/16"
+      "10.0.0.0/16"
     ]
   },
   "subnetName": {
-    "value": "rhel-external-subnet"
+    "value": "Subnet-1"
   },
   "subnetPrefix": {
-    "value": "10.2.1.0/24"
+    "value": "10.0.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "Test-VNET-Solution-RG1"
+    "value": "Test-soln-EAP72-rhel7-byos-rg1"
   },
   "publicIpNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "publicIpName": {
-    "value": "eap73-rhel8-ip1"
+    "value": "jbosseap-server1-rhel7-ip"
   },
   "publicIpDns": {
-    "value": "eap73rhel8external-ip1"
+    "value": "jbosseap-server1-rhel7-78f01c8a09"
   },
   "publicIpResourceGroupName": {
-    "value": "External-IP-Test-Rg1"
+    "value": "Test-soln-EAP72-rhel7-byos-rg1"
   },
   "publicIPAllocationMethod": {
     "value": "Dynamic"
-  },
-  "publicIpSku": {
-    "value": "Basic"
   },
   "jbossEAPUserName": {
     "value": "demouser1"
