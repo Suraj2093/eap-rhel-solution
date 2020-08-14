@@ -221,7 +221,7 @@
             "defaultValue": ""
         },
         "_artifactsLocation": {
-            "defaultValue": "https://raw.githubusercontent.com/SpektraSystems/redhat-mw-cloud-quickstart/suraj-rhel77/jboss-eap-standalone-rhel8/",
+            "defaultValue": "https://raw.githubusercontent.com/Suraj2093/eap-rhel-solution/master/my-offer/",
             "type": "String",
             "metadata": {
                 "description": "The base URI where artifacts required by this template are located. When the template is deployed using the accompanying scripts, a private location in the subscription will be used and this value will be automatically generated"
