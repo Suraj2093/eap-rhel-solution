@@ -1,73 +1,85 @@
 {
   "location": {
-    "value": "eastus"
+    "value": "centralus"
   },
   "plan": {
-    "value": "JBoss EAP7.2 on RHEL7.7"
+    "value": "JBoss-EAP7.2-on-RHEL7.7-PAYG"
   },
   "vmName": {
-    "value": "jbosseap72-server3-rhel7"
+    "value": "jbosseap-server1-payg-rhel77"
   },
   "adminUsername": {
     "value": "demouser"
   },
   "authenticationType": {
-    "value": "sshPublicKey"
+    "value": "password"
   },
   "adminPasswordOrSSHKey": {
-    "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA4LbOpNIigWStHA7eihl6mvXgzFtwNA4uHoqKoj7QTHU/N9oIGoQ2qFe80KM1vA09BskL5Knk7p8VxxFMBFTaSVI9fuRlaZY2Lp94kdfQOKwghKufMNDD7E3rIVDXHdnovnR/9Qf0IUc6p7K8srl6RPjzOCqxSX0UqpO++TSBsO6kYsw1f7nKLeC81t1x7g6WJs2OMiaAtWzeqSB5JXDi2XGLmDqmH29gqgtv8M3n5QAW8vM98shwl/OAXYKDAdvil8lVopBhVyhLexFeTTF2Z6VhroHQvJ9S7sEM8JDW7szv2tx5p7tKtbLyAi0fIu8JWB+Wr7HQrDOf8A/2jhMRvw=="
+    "value": "demoPassword1!"
   },
   "vmSize": {
     "value": "Standard_DS2_v2"
-  },
-  "bootDiagnostics": {
-    "value": "On"
-  },
-  "storageNewOrExisting": {
-    "value": "existing"
-  },
-  "storageAccountName": {
-    "value": "diagteststrgsoln"
-  },
-  "storageAccountType": {
-    "value": "Standard_LRS"
   },
   "virtualNetworkNewOrExisting": {
     "value": "new"
   },
   "virtualNetworkName": {
-    "value": "rhelnew-VNET"
+    "value": "VirtualNetwork"
   },
   "addressPrefixes": {
     "value": [
-      "10.6.0.0/16"
+      "10.3.0.0/16"
     ]
   },
   "subnetName": {
-    "value": "rhel7-subnet"
+    "value": "Subnet-rhel77-payg"
   },
   "subnetPrefix": {
-    "value": "10.6.0.0/24"
+    "value": "10.3.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP72-RHEL7-Img-Soln-Test-Rg3"
+    "value": "EAP72-RHEL77-PAYG-soln-RG1"
   },
   "publicIpNewOrExisting": {
-    "value": "none"
+    "value": "new"
+  },
+  "publicIpName": {
+    "value": "jbosseap-server1-payg-rhel77-ip"
   },
   "publicIpDns": {
-    "value": ""
+    "value": "jbosseap-server1-payg-rhel77-38046111cc"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP72-RHEL7-Img-Soln-Test-Rg3"
+    "value": "EAP72-RHEL77-PAYG-soln-RG1"
   },
-  "publicIpSku": {
-    "value": "Basic"
+  "publicIPAllocationMethod": {
+    "value": "Dynamic"
+  },
+  "bootDiagnostics": {
+    "value": "On"
+  },
+  "storageNewOrExisting": {
+    "value": "new"
+  },
+  "storageAccountName": {
+    "value": "jbosseap4d2f5b7ded"
+  },
+  "storageAccountType": {
+    "value": "Standard_LRS"
   },
   "jbossEAPUserName": {
     "value": "demouser1"
   },
   "jbossEAPPassword": {
     "value": "demoPassword1!"
+  },
+  "rhsmUserName": {
+    "value": "surajpaispektra"
+  },
+  "rhsmPassword": {
+    "value": "Spektra@123"
+  },
+  "rhsmPoolEAP": {
+    "value": "8a85f99972762fce017299694421706b"
   }
 }
