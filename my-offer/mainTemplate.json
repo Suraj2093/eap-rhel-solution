@@ -10,7 +10,6 @@
             }
         },
         "plan": {
-            "defaultValue": "JBoss-EAP7.2-on-RHEL7.7-BYOS",
             "allowedValues": [
                 "JBoss-EAP7.2-on-RHEL7.7-BYOS",
                 "JBoss-EAP7.2-on-RHEL7.7-PAYG",
