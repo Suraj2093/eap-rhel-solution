@@ -3,10 +3,10 @@
     "value": "centralus"
   },
   "plan": {
-    "value": "JBoss-EAP7.2-on-RHEL7.7-PAYG"
+    "value": "JBoss-EAP7.2-on-RHEL8.0-PAYG"
   },
   "vmName": {
-    "value": "jbosseap-server1-payg-rhel77"
+    "value": "jbosseap-server1-payg-rhel8"
   },
   "adminUsername": {
     "value": "demouser"
@@ -28,29 +28,29 @@
   },
   "addressPrefixes": {
     "value": [
-      "10.3.0.0/16"
+      "10.4.0.0/16"
     ]
   },
   "subnetName": {
-    "value": "Subnet-rhel77-payg"
+    "value": "Subnet-1"
   },
   "subnetPrefix": {
-    "value": "10.3.0.0/24"
+    "value": "10.4.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP72-RHEL77-PAYG-soln-RG1"
+    "value": "EAP72-RHEL8-PAYG-soln-RG1"
   },
   "publicIpNewOrExisting": {
     "value": "new"
   },
   "publicIpName": {
-    "value": "jbosseap-server1-payg-rhel77-ip"
+    "value": "jbosseap-server1-payg-rhel8-ip"
   },
   "publicIpDns": {
-    "value": "jbosseap-server1-payg-rhel77-38046111cc"
+    "value": "jbosseap-server1-payg-rhel8-c4db81dbcc"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP72-RHEL77-PAYG-soln-RG1"
+    "value": "EAP72-RHEL8-PAYG-soln-RG1"
   },
   "publicIPAllocationMethod": {
     "value": "Dynamic"
@@ -62,7 +62,7 @@
     "value": "new"
   },
   "storageAccountName": {
-    "value": "jbosseap4d2f5b7ded"
+    "value": "jbosseapa2fc6c7460"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
