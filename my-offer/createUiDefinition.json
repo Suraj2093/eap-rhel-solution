@@ -8,21 +8,32 @@
                 "name": "plan",
                 "type": "Microsoft.Common.DropDown",
                 "label": "Plan",
-                "defaultValue": "JBoss EAP7.2 on RHEL7.7",
                 "toolTip": "Version of JBoss EAP on RHEL you want to deploy",
                 "constraints": {
                   "allowedValues": [
                     {
-                      "label": "JBoss EAP7.2 on RHEL7.7",
-                      "value": "JBoss EAP7.2 on RHEL7.7"
+                      "label": "JBoss EAP7.2 on RHEL7.7 BYOS",
+                      "value": "JBoss-EAP7.2-on-RHEL7.7-BYOS"
                     },
                     {
-                      "label": "JBoss EAP7.2 on RHEL8.0",
-                      "value": "JBoss EAP7.2 on RHEL8.0"
+                      "label": "JBoss EAP7.2 on RHEL7.7 PAYG",
+                      "value": "JBoss-EAP7.2-on-RHEL7.7-PAYG"
                     },
                     {
-                      "label": "JBoss EAP7.3 on RHEL8.0",
-                      "value": "JBoss EAP7.3 on RHEL8.0"
+                      "label": "JBoss EAP7.2 on RHEL8.0 BYOS",
+                      "value": "JBoss-EAP7.2-on-RHEL8.0-BYOS"
+                    },
+                    {
+                      "label": "JBoss EAP7.2 on RHEL8.0 PAYG",
+                      "value": "JBoss-EAP7.2-on-RHEL8.0-PAYG"
+                    },
+                    {
+                      "label": "JBoss EAP7.3 on RHEL8.0 BYOS",
+                      "value": "JBoss-EAP7.3-on RHEL8.0-BYOS"
+                    },
+                    {
+                      "label": "JBoss EAP7.3 on RHEL8.0 PAYG",
+                      "value": "JBoss-EAP7.3-on RHEL8.0-PAYG"
                     }
                   ],
                   "required": true
@@ -48,7 +59,9 @@
                 "toolTip": "Linux VM user account name",
                 "osPlatform": "Linux",
                 "constraints": {
-                    "required": true
+                    "required": true,
+                    "regex": "^[a-zA-Z]+[a-zA-Z0-9_-]{1,64}$",
+                    "validationMessage": "The value must be between 1 and 64 characters long."
                 }
             },
             {
@@ -102,45 +115,6 @@
                         ],
                         "osPlatform": "Linux",
                         "count": "1"
-                    },
-                    {
-                        "name": "bootDiagnostics",
-                        "type": "Microsoft.Common.OptionsGroup",
-                        "label": "Boot diagnostics",
-                        "defaultValue": "On",
-                        "toolTip": "Capture serial console outputs and screenshots of the virtual machine running on a host to help diagnose startup issues",
-                        "constraints": {
-                          "allowedValues": [
-                            {
-                              "label": "On",
-                              "value": "On"
-                            },
-                            {
-                              "label": "Off",
-                              "value": "Off"
-                            }
-                          ],
-                          "required": true
-                        },
-                        "visible": true
-                    },
-                    {
-                        "name": "storageAccountType",
-                        "type": "Microsoft.Storage.StorageAccountSelector",
-                        "label": "Diagnostic storage account",
-                        "toolTip": "Storage Account for the Virtual Machine's diagnostics",
-                        "visible": "[equals(steps('VirtualMachineConfig').bootDiagnostics, 'On')]",
-                        "defaultValue": {
-                            "type": "Standard_LRS",
-                            "name": "[concat(take(replace(basics('vmName'), '-', ''), 8), take(replace(guid(), '-', ''), 10))]"
-                        },
-                        "constraints": {
-                            "regex": "[concat('^jdbc:', coalesce(steps('VirtualMachineConfig').storageAccountType, ''), '.*$')]",
-                            "allowedTypes": [
-                                "Standard_LRS",
-                                "Standard_GRS"
-                            ]
-                        }
                     },
                     {
                         "name": "virtualNetwork",
@@ -199,6 +173,45 @@
                                 "domainNameLabel": true
                             }
                         }
+                    },
+                    {
+                        "name": "bootDiagnostics",
+                        "type": "Microsoft.Common.OptionsGroup",
+                        "label": "Boot diagnostics",
+                        "defaultValue": "On",
+                        "toolTip": "Capture serial console outputs and screenshots of the virtual machine running on a host to help diagnose startup issues",
+                        "constraints": {
+                          "allowedValues": [
+                            {
+                              "label": "On",
+                              "value": "On"
+                            },
+                            {
+                              "label": "Off",
+                              "value": "Off"
+                            }
+                          ],
+                          "required": true
+                        },
+                        "visible": true
+                    },
+                    {
+                        "name": "storageAccountType",
+                        "type": "Microsoft.Storage.StorageAccountSelector",
+                        "label": "Diagnostic storage account",
+                        "toolTip": "Storage Account for the Virtual Machine's diagnostics",
+                        "visible": "[equals(steps('VirtualMachineConfig').bootDiagnostics, 'On')]",
+                        "defaultValue": {
+                            "type": "Standard_LRS",
+                            "name": "[concat(take(replace(basics('vmName'), '-', ''), 8), take(replace(guid(), '-', ''), 10))]"
+                        },
+                        "constraints": {
+                            "regex": "[concat('^jdbc:', coalesce(steps('VirtualMachineConfig').storageAccountType, ''), '.*$')]",
+                            "allowedTypes": [
+                                "Standard_LRS",
+                                "Standard_GRS"
+                            ]
+                        }
                     }
                 ]
             },
@@ -235,8 +248,44 @@
                         "constraints": {
                             "required": true
                         },
-                        
                         "visible": true
+                    },
+                    {
+                        "name": "rhsmUserName",
+                        "type": "Microsoft.Compute.UserNameTextBox",
+                        "label": "RedHat Subscription Manager username",
+                        "osPlatform": "Linux",
+                        "visible": "[contains(basics('plan'), 'PAYG')]",
+                        "constraints": {
+                            "required": true
+                        },
+                        "toolTip": "Provide User name for RedHat subscription Manager"
+                    },
+                    {
+                        "name": "rhsmPassword",
+                        "type": "Microsoft.Common.PasswordBox",
+                        "label": {
+                            "password": "RedHat Subscription Manager password",
+                            "confirmPassword": "Confirm password"
+                        },
+                        "visible": "[contains(basics('plan'), 'PAYG')]",
+                        "toolTip":"Provide Password for  RedHat subscription Manager",
+                        "options": {
+                            "hideConfirmation": false
+                        },
+                        "constraints": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "rhsmPoolEAP",
+                        "type": "Microsoft.Common.TextBox",
+                        "label": "RHSM Pool ID with EAP entitlement",
+                        "toolTip": "RedHat Subscription Manager Pool ID (Should have EAP entitlement)",
+                        "constraints": {
+                            "required": true
+                        },
+                        "visible": "[contains(basics('plan'), 'PAYG')]"
                     }
                 ]
             }
@@ -251,11 +300,6 @@
             "adminPasswordOrSSHKey": "[coalesce(basics('authenticationType').password, basics('authenticationType').sshPublicKey)]",
 
             "vmSize": "[steps('VirtualMachineConfig').vmSize]",
-            "bootDiagnostics": "[steps('VirtualMachineConfig').bootDiagnostics]",
-            "storageNewOrExisting": "[steps('VirtualMachineConfig').storageAccountType.newOrExisting]",
-            "storageAccountName": "[steps('VirtualMachineConfig').storageAccountType.name]",
-            "storageAccountType": "[steps('VirtualMachineConfig').storageAccountType.type]",
-
             "virtualNetworkNewOrExisting": "[steps('VirtualMachineConfig').virtualNetwork.newOrExisting]",
             "virtualNetworkName": "[steps('VirtualMachineConfig').virtualNetwork.name]",
             "addressPrefixes": "[steps('VirtualMachineConfig').virtualNetwork.addressPrefixes]",
@@ -269,9 +313,17 @@
             "publicIpResourceGroupName": "[steps('VirtualMachineConfig').publicIpAddress.resourceGroup]",
             "publicIPAllocationMethod": "[steps('VirtualMachineConfig').publicIpAddress.publicIPAllocationMethod]",
             "publicIpSku": "[steps('VirtualMachineConfig').publicIpAddress.sku]",
+
+            "bootDiagnostics": "[steps('VirtualMachineConfig').bootDiagnostics]",
+            "storageNewOrExisting": "[steps('VirtualMachineConfig').storageAccountType.newOrExisting]",
+            "storageAccountName": "[steps('VirtualMachineConfig').storageAccountType.name]",
+            "storageAccountType": "[steps('VirtualMachineConfig').storageAccountType.type]",
             
             "jbossEAPUserName": "[steps('jbossEAPSettings').jbossEAPUserName]",
-            "jbossEAPPassword": "[steps('jbossEAPSettings').jbossEAPPassword]"
+            "jbossEAPPassword": "[steps('jbossEAPSettings').jbossEAPPassword]",
+            "rhsmUserName": "[steps('jbossEAPSettings').rhsmUserName]",
+            "rhsmPassword": "[steps('jbossEAPSettings').rhsmPassword]",
+            "rhsmPoolEAP": "[steps('jbossEAPSettings').rhsmPoolEAP]"
 
         }
     }
